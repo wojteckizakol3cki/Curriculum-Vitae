@@ -1,24 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moje CV</title>
     <link rel="stylesheet" href="styles.css">
+        <title>Kliknij gdziekolwiek, aby odtworzyć dźwięk</title>
+    <style>
+    
+
+
+        /* Pozostałe style CSS */
+
+        /* Styl dla stopki */
+        .footer {
+            text-align: center; /* Wyśrodkowanie zawartości */
+            position: fixed; /* Umieszczenie stopki w stałej pozycji */
+            bottom: 0; /* Odległość od dołu strony */
+            width: 100%; /* Szerokość stopki na całej szerokości strony */
+            background-color: white; /* Białe tło */
+            padding: 20px; /* Wewnętrzny odstęp */
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Cień na górze */
+        }
+
+        .footer a {
+            margin: 0 10px; /* Margines między linkami */
+        }
+
+        .footer img {
+            width: 30px; /* Szerokość ikon */
+            vertical-align: middle; /* Wyrównanie ikon do środka tekstu */
+        }
+
+        /* Styl dla sekcji głównych informacji CV */
+        .cv {
+            width: 45%; /* Szerokość sekcji */
+            background-color:rgba(255, 255, 255, 0.5);
+            font-family: 'Arial', sans-serif; /* Ustawienie czcionki */
+            font-size: 16px; /* Rozmiar czcionki */
+            line-height: 1.5; /* Wysokość linii */
+            border-radius: 10px; /* Zaokrąglenie krawędzi */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Cień */
+            padding: 20px; /* Wewnętrzny odstęp */
+            margin-bottom: 20px; /* Dodajemy odstęp na dole sekcji CV */
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            background-image: url('your-image.png'); /* Dodanie zdjęcia profilowego */
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        /* Styl dla sekcji doświadczenia */
+        .experience {
+            width: 20%; /* Szerokość sekcji */
+            background-color: rgba(255, 255, 255, 0.5);
+            font-family: 'Arial', sans-serif; /* Ustawienie czcionki */
+            font-size: 16px; /* Rozmiar czcionki */
+            line-height: 1.5; /* Wysokość linii */
+            border-radius: 10px; /* Zaokrąglenie krawędzi */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Cień */
+            padding: 20px; /* Wewnętrzny odstęp */
+            float: right; /* Dodajemy właściwość float z wartością right */
+        clear: both; /* Dodajemy właściwość clear, aby uniknąć nakładania się elementów */
+
+        }
+
+        .experience h2 {
+            font-size: 24px; /* Rozmiar nagłówka */
+            margin-bottom: 20px; /* Odstęp na dole */
+            text-align: center; /* Wyśrodkowanie tekstu */
+        }
+
+        .experience ul {
+            list-style-type: none; /* Usunięcie domyślnych punktorów */
+            padding: 0; /* Usunięcie wewnętrznego odstępu */
+        }
+
+        .experience li {
+            margin-bottom: 10px; /* Odstęp między poszczególnymi wpisami */
+            padding: 5px; /* Wewnętrzny odstęp */
+            background-color: #f9f9f9; /* Tło dla każdego wpisu */
+            border-radius: 5px; /* Zaokrąglenie krawędzi */
+        }
+    </style>
 </head>
 <body>
     <div class="container">
+        <!-- Sekcja głównych informacji CV -->
         <div class="cv">
-            <div class="profile-picture" id="profile-picture" style="background-image: url('your-image.png');"></div>
-            <div class="details">
-                <h1>Grzegorz Krychowiak</h1>
-                <p>Środkowy pomocnik</p>
-                <p>Email: grzegorzkrychowiak@gmail.com</p>
-                <p>Telefon: 666687654</p>
-            </div>
+            <div class="profile-picture" id="profile-picture"></div>
+            <h1>Grzegorz Krychowiak</h1>
+            <p>Środkowy pomocnik</p>
+            <p>Email: grzegorzkrychowiak@gmail.com</p>
+            <p>Telefon: 666687654</p>
+        </div>
+
+        <!-- Sekcja doświadczenia -->
+        <div class="experience">
+            <h2>Doświadczenie</h2>
+            <ul>
+                <li>2007–2008: Zagłębie Lubin - 0 goli, 0 asyst, 8 mecze</li>
+                <li>2008–2009: Bordeaux - 0 goli, 0 asyst, 0 meczów</li>
+                <li>2009–2014: Reims - 1 gol, 2 asysty, 111 mecze</li>
+                <li>2014–2015: FC Sevilla - 1 gol, 3 asysty, 31 mecze</li>
+                <li>2015–2016: Paris Saint-Germain - 0 goli, 1 asysta, 10 meczów</li>
+                <li>2016–2020: West Bromwich Albion - 7 goli, 6 asyst, 90 meczów</li>
+                <li>2020–obecnie: Lokomotiw Moskwa - 3 gole, 4 asysty, 25 meczów</li>
+            </ul>
         </div>
     </div>
 
+    <div class="footer">
+        <a href="https://www.youtube.com/watch?v=ouX6GztYMeI&ab_channel=MattiDaDribblare" target="_blank" rel="noopener noreferrer">
+            <img src="youtube_logo.png" alt="YouTube Logo"> Obejrzyj na YouTube
+        </a>
+        <br> <!-- Nowa linia między linkami -->
+        <a href="https://www.transfermarkt.pl/grzegorz-krychowiak/profil/spieler/45184" target="_blank" rel="noopener noreferrer">
+            <img src="transfermarkt_logo.png" alt="Transfermarkt Logo"> Profil na Transfermarkt
+        </a>
+    </div>
+<!-- Plik dźwiękowy -->
+<audio id="myAudio">
+    <source src="krychowiak.mp3" type="audio/mpeg">
+    <!-- Dodaj inne formaty dźwięku, np. WAV, dla większej kompatybilności -->
+    <!-- <source src="sound.wav" type="audio/wav"> -->
+    Your browser does not support the audio element.
+</audio>
     <script src="script.js"></script>
 </body>
 </html>

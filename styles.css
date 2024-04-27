@@ -1,28 +1,87 @@
 .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Umieszczamy elementy w górnym rzędzie kontenera */
     height: 100vh;
     background-image: url('krycha.jpg'); /* Zmiana tła na zdjęcie "krycha.jpg" */
     background-size: cover;
+    opacity: 0.7; /* Przezroczystość tła o wartości 70% */
 }
 
 .cv {
     display: flex;
-    flex-direction: column; /* Zmieniamy na kolumnę, aby elementy były ułożone jeden pod drugim */
+    flex-direction: column;
     align-items: center;
-    width: 400px;
+    min-width: 600px; /* Poprawka: zmieniono "min width" na "min-width" */
     border: 1px solid #ccc;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Dodajemy tło dla sekcji CV */
-}
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    }
 
 .profile-picture {
     width: 150px;
     height: 150px;
     background-image: url('your-image.png');
+    margin-right: 30px; /* Przesunięcie zdjęcia od lewej krawędzi */
     background-size: cover;
     background-position: center;
     border-radius: 50%;
     margin-bottom: 20px; /* Dodajemy odstęp na dole, aby oddzielić obrazek profilowy od reszty treści */
 }
+    /* Styl dla sekcji doświadczenia */
+    .experience {
+        width: 45%;
+        margin-left: auto; /* Dodano odstęp z lewej strony, aby wycentrować sekcję */
+        background-color: rgba(255, 255, 255, 0.5);
+        font-family: 'Arial', sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        float: right;
+        clear: both;
+}
+
+.element-with-glow {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Ustawienie cienia */
+}
+
+
+<style>
+    .footer {
+        text-align: center; /* Wycentrowanie elementów w stopce */
+    }
+
+    .footer a {
+        display: inline-block; /* Ustawienie linków jako blokowe */
+        margin-bottom: 10px; /* Odstęp między linkami */
+    }
+
+    .footer img {
+        width: 24px; /* Zmniejszenie szerokości obrazków (ikon) */
+        height: auto; /* Zachowanie proporcji */
+        margin-bottom: 5px; /* Odstęp między obrazkami a tekstami linków */
+    }
+</style>
+/head>
+<body>
+<div class="container">
+    <div class="cv">
+        <!-- Zawartość CV -->
+    </div>
+</div>
+
+<div class="footer">
+    <a href="https://www.youtube.com/watch?v=ouX6GztYMeI&ab_channel=MattiDaDribblare" target="_blank" rel="noopener noreferrer">
+        <img src="youtube_logo.png" alt="YouTube Logo"> Obejrzyj na YouTube
+    </a>
+    <br> <!-- Nowa linia między linkami -->
+    <a href="https://www.transfermarkt.pl/grzegorz-krychowiak/profil/spieler/45184" target="_blank" rel="noopener noreferrer">
+        <img src="transfermarkt_logo.png" alt="Transfermarkt Logo"> Profil na Transfermarkt
+    </a>
+</div>
+
+<script src="script.js"></script>
+</body>

@@ -9,3 +9,11 @@ document.addEventListener('mousemove', (e) => {
     const rotation = angle * (180 / Math.PI) + 90;
     profilePicture.style.transform = `rotate(${rotation}deg)`;
 });
+// Pobranie elementu audio
+var audio = document.getElementById("myAudio");
+
+// Dodanie obsługi zdarzenia kliknięcia na całym dokumencie
+document.addEventListener("click", function() {
+    // Odtworzenie dźwięku
+    audio.play();
+});
